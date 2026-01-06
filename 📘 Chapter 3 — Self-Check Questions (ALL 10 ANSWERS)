@@ -1,0 +1,72 @@
+
+JavaScript · AJAX · Extension Methods
+
+Question 1
+Discuss how JavaScript (client-side processing) is different from C# (server-side processing).
+Answer (EN):
+JavaScript runs on the client side (browser) and performs processing locally without a server roundtrip, resulting in fast response. However, it is less powerful, cannot directly access databases, and is insecure because users can disable or modify it. C# runs on the server side, requires request–response roundtrip, and is more powerful and secure. It can directly access databases and perform complex processing.
+答案（中）：
+JavaScript 在客户端（浏览器）运行，无需服务器往返，响应速度快，但功能有限、无法直接访问数据库，且安全性较低。C# 在服务器端运行，需要请求–响应往返，但功能强大、安全性高，并可直接访问数据库。
+
+Question 2
+Define unobtrusive JavaScript.
+Answer (EN):
+Unobtrusive JavaScript is an approach that separates JavaScript behavior from HTML markup, avoids inline event handling, and registers events programmatically using the DOM.
+答案（中）：
+Unobtrusive JavaScript 是一种将 JavaScript 行为与 HTML 结构分离的做法，避免使用内联事件，并通过 DOM 方式注册事件。
+
+Question 3
+The following event handling approach is not recommended. Suggest a better way to handle events in JavaScript. (Code example not required)
+Answer (EN):
+Inline event handling is not recommended because it mixes JavaScript with HTML and reduces maintainability. A better approach is unobtrusive JavaScript, where events are attached programmatically in external JavaScript files.
+答案（中）：
+不推荐内联事件处理方式，因为会将 JavaScript 与 HTML 混合，难以维护。更好的方式是使用 Unobtrusive JavaScript，在外部 JS 文件中以程序方式注册事件。
+
+Question 4
+Discuss the advantages of writing unobtrusive JavaScript.
+Answer (EN):
+Advantages include maintainability with cleaner code, clear task distribution between designers and developers, modular and reusable JavaScript components, and graceful degradation where the page still works if JavaScript is disabled.
+答案（中）：
+使用 Unobtrusive JavaScript 可以提升代码可维护性，使任务分工更清晰，同时提高模块化与可重用性，即使浏览器关闭 JavaScript，网页仍可正常运作，体现渐进增强的设计原则。
+
+Question 5
+Discuss the problems of traditional page loading approach without AJAX.
+Answer (EN):
+Traditional page loading causes full-page reload, resets scroll position, reloads static content, and increases data transfer, resulting in poor user experience.
+答案（中）：
+传统页面加载方式会导致整页刷新，使滚动位置重置，并重复下载静态内容，从而增加流量消耗并降低整体用户体验。
+
+Question 6
+Discuss AJAX programming technique and its advantages.
+Answer (EN):
+AJAX allows JavaScript to send HTTP requests asynchronously in the background without reloading the whole page, and only the required content is updated. This results in faster response, reduced data transfer, and better user experience.
+答案（中）：
+AJAX 允许 JavaScript 在后台异步发送 HTTP 请求，而无需整页刷新，只更新所需内容，因此能提升响应速度、减少数据传输量，并改善用户体验。
+
+Question 7
+Suggest some AJAX features that can be implemented in web applications.
+Answer (EN):
+Examples include AJAX searching, AJAX sorting, AJAX paging, and partial content updates.
+答案（中）：
+AJAX 常见的应用功能包括即时搜索、动态排序、分页显示以及局部内容更新。
+
+Question 8
+Discuss AJAX polling technique.
+Answer (EN):
+AJAX polling is a technique where the client automatically sends AJAX requests at fixed intervals to retrieve updated data, simulating real-time behavior.
+答案（中）：
+AJAX Polling 是一种由客户端在固定时间间隔自动发送 AJAX 请求以获取最新数据的技术，用来模拟实时更新效果。
+
+Question 9
+What is the problem of AJAX polling?
+Answer (EN):
+If polling frequency is high, it causes heavy load on both client and server, making it inefficient compared to modern techniques such as WebSocket.
+答案（中）：
+当请求频率过高时，AJAX Polling 会对客户端与服务器造成较大负载，其效率也低于 WebSocket 等较新的实时通信技术。
+
+Question 10
+Discuss the purpose of extension methods in C#.
+Answer (EN):
+Extension methods allow developers to add new methods to existing types without modifying their source code, improving code reuse and readability.
+答案（中）：
+扩展方法允许开发者在不修改原有类型源码的情况下新增方法，从而提升代码的可重用性与整体可读性。
