@@ -1,0 +1,50 @@
+
+
+Question 1
+What is the purpose of Include() method in a SELECT operation?
+Answer (EN):
+Include() explicitly loads related data from another table using navigation properties. By default, related tables are not loaded for performance reasons. Include() translates into an SQL JOIN statement.
+答案（中）：
+Include() 用于显式加载关联表的数据，默认情况下为性能考虑不会加载关联表，底层会转换为 SQL JOIN 语句。
+
+Question 2
+Differentiate between First() and FirstOrDefault() methods.
+Answer (EN):
+First() throws an error if no record is found. FirstOrDefault() returns null if no record is found. FirstOrDefault() is safer when records may not exist.
+答案（中）：
+First() 找不到记录时会报错，FirstOrDefault() 找不到记录时返回 null，因此在不确定是否存在记录时应使用 FirstOrDefault()。
+
+Question 3
+What is the purpose of Select() method in a SELECT operation?
+Answer (EN):
+Select() is used for projection, selecting specific columns instead of all columns, and can transform data into different shapes or calculated values.
+答案（中）：
+Select() 用于投影，只返回指定列，也可生成计算列或转换数据结构。
+
+Question 4
+Differentiate between GET and POST request methods. Classify CRUD operations.
+Answer (EN):
+GET: Retrieve data without altering server state. POST: Create, update, or delete data. CRUD: SELECT → GET, INSERT/UPDATE/DELETE → POST.
+答案（中）：
+GET 用于获取数据，不改变服务器状态；POST 用于新增、修改或删除数据。CRUD 分类：SELECT → GET，INSERT/UPDATE/DELETE → POST。
+
+Question 5
+Decide whether GET or POST is suitable. State the reason.
+Answer (EN):
+Operations that read data (select, search, sort, download) use GET; operations that modify data (insert, update, delete, upload) use POST.
+答案（中）：
+查询、搜索、排序、下载使用 GET；新增、修改、删除、上传使用 POST，原因是是否改变服务器数据状态。
+
+Question 6
+Advantages of ExecuteUpdate() and ExecuteDelete() methods.
+Answer (EN):
+Only one SQL query executed, no SELECT query required, lower memory usage, better performance, suitable for bulk operations.
+答案（中）：
+只执行一条 SQL，无需加载数据到内存，内存占用低，性能更好，适合批量更新或删除操作。
+
+Question 7
+Disadvantages of ExecuteUpdate() and ExecuteDelete() methods.
+Answer (EN):
+Syntax is more SQL-oriented, no entity tracking, cannot use navigation properties, cannot check record existence, only works on single table.
+答案（中）：
+语法偏向 SQL，不追踪实体变化，无法操作关联对象，不检查记录是否存在，仅支持单表操作。
