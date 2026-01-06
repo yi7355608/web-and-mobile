@@ -1,0 +1,36 @@
+
+
+Question 1
+Differentiate between domain models and view models.
+Answer (EN):
+Domain models map directly to database tables and represent business data. View models capture form inputs and display output, may not map to database tables.
+答案（中）：
+Domain Model 用于数据库映射，View Model 用于表单输入与界面显示。
+
+Question 2
+Purpose of validation attributes.
+Answer (EN):
+[Required], [StringLength], [MinLength]/[MaxLength], [EmailAddress], [Url], [Compare], [Range], [RegularExpression], [Remote] – ensure inputs follow rules like required fields, length limits, format, range, and AJAX-based validation.
+答案（中）：
+这些属性用于验证输入是否符合规则，如必填、长度、格式、范围及远程验证。
+
+Question 3
+Differentiate between client-side and server-side input validations. Recommend one.
+Answer (EN):
+Client-side (JavaScript): fast response, better UX. Server-side (C#): secure, mandatory. Modern systems should use both.
+答案（中）：
+客户端验证提升体验，服务器端验证保证安全，现代系统应同时使用两者。
+
+Question 4
+Differentiate between strongly-typed models and ViewBag properties.
+Answer (EN):
+Strongly-typed model: main data and form input. ViewBag: secondary data like dropdown lists.
+答案（中）：
+强类型模型用于主要数据，ViewBag 用于辅助数据。
+
+Question 5
+Explain how a controller uses both strongly-typed model and ViewBag.
+Answer (EN):
+Controller passes main object as strongly-typed model, supporting data via ViewBag for UI elements.
+答案（中）：
+控制器使用强类型模型传递主要数据，用 ViewBag 传递下拉列表等辅助数据。
