@@ -1,0 +1,117 @@
+
+
+Question 1
+Suggest an appropriate software stack (operating system, web server, database server and programming runtime) for hosting ASP.NET web applications.
+
+Answer (EN):
+Operating System: Windows Server
+Web Server: IIS
+Database Server: SQL Server
+Programming Runtime: .NET (ASP.NET)
+
+答案（中）：
+操作系统：Windows Server
+Web 服务器：IIS
+数据库服务器：SQL Server
+运行环境：.NET (ASP.NET)
+
+Question 2
+Discuss the advantages of using the ASP.NET platform for developing web applications from the following aspects: Existing software environment, Customer support, Expandability and scalability, Rich and unified frameworks, Consistent software components.
+
+Answer (EN):
+Existing software environment: Many companies use Windows-based systems; easier to deploy ASP.NET
+Customer support: Proprietary software offers support as part of the license
+Expandability and scalability: Enterprise-grade architecture, supports future growth
+Rich and unified frameworks: Supports MVC, Web API, SignalR, Razor Pages, Blazor, etc.
+Consistent software components: Tools integrate well (Visual Studio, IIS, SQL Server, Windows Server)
+
+答案（中）：
+现有软件环境：Windows 系统已广泛使用，部署 ASP.NET 更方便
+客户支持：商业软件包含技术支持
+可扩展性与伸缩性：企业级架构，支持未来增长
+丰富统一的框架：MVC、Web API、SignalR、Razor Pages、Blazor 等
+一致的软件组件：Visual Studio、IIS、SQL Server、Windows Server 高度集成
+
+Question 3
+Identify and discuss the role of the 3 core components of MVC web architecture. Provide 2 examples for each.
+
+Answer (EN):
+Model: Handles data & business logic; examples: Product, Student
+View: Handles UI & presentation; examples: Index.cshtml, Create.cshtml
+Controller: Handles requests & coordinates Model/View; examples: HomeController, StudentController
+
+答案（中）：
+Model（模型）：处理数据和业务逻辑；例子：Product、Student
+View（视图）：处理界面显示；例子：Index.cshtml、Create.cshtml
+Controller（控制器）：处理请求并协调模型与视图；例子：HomeController、StudentController
+
+Question 4
+Discuss the advantages of MVC web architecture from the following aspects: Separation of concerns, Task distribution, Maintainability, Reusable, Unit Testable.
+
+Answer (EN):
+Separation of concerns: Components have specific responsibilities
+Task distribution: Developers → Controller, Designers → View, DB Admins → Model
+Maintainability: Changing one component minimally affects others
+Reusable: Components can be reused in other projects
+Unit Testable: Logic decoupled, easier automated testing
+
+答案（中）：
+关注点分离：组件职责明确
+任务分工：开发→Controller，设计→View，DB 管理员→Model
+可维护性：修改某组件影响小
+可重用性：组件可用于其他项目
+可单元测试：逻辑分离，便于自动测试
+
+Question 5
+Discuss how MVC web architecture helps in task distribution for a project team.
+
+Answer (EN):
+MVC allows developers, designers, and DB administrators to work independently on their components, improving efficiency and reducing conflicts.
+
+答案（中）：
+MVC 允许开发人员、设计师和数据库管理员各自负责不同组件，能够并行开发，提高团队效率并减少冲突。
+
+Question 6
+Discuss why URL routing is necessary for ASP.NET MVC web applications.
+
+Answer (EN):
+URL routing maps URLs to the correct controller and action because web pages are not physical files, enabling clean and flexible URLs.
+
+答案（中）：
+URL 路由用于将请求的 URL 映射到对应的控制器与动作方法，由于 MVC 网页不是实体文件，因此路由机制可实现清晰且灵活的 URL 结构。
+
+Question 7
+Discuss in words how the following URL is mapped:
+https://www.abc.com/Product/Update/P001?quantity=123
+
+Answer (EN):
+Controller: ProductController
+Action: Update
+Parameter id: P001
+Parameter quantity: 123
+
+答案（中）：
+该 URL 会映射到 ProductController 中的 Update 动作方法，其中 P001 作为 id 参数传入，而 quantity 的值为 123。
+
+Question 8
+Write the URL to access the following controller and action method. Pass S001 for id and 2024 for year.
+
+public class StudentController : Controller {
+  public IActionResult Detail(string id, int year) { ... }
+}
+
+
+Answer (EN):
+https://www.abc.com/Student/Detail/S001?year=2024
+
+答案（中）：
+https://www.abc.com/Student/Detail/S001?year=2024
+
+Question 9
+Rewrite the code to map to the URL: https://www.abc.com/Product/Update/P001?quantity=123
+
+Answer (EN / 中):
+
+public class ProductController : Controller {
+  public IActionResult Update(string id, int quantity) { ... }
+}
