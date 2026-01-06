@@ -1,0 +1,36 @@
+
+
+Question 1
+Differentiate between authentication and authorization. For each of them, provide a use case example of how it can be implemented in a web system.
+Answer (EN):
+Authentication is the process of verifying who the user is, while authorization is the process of determining what the authenticated user is allowed to do. For example, authentication can be implemented using email and password login, whereas authorization can be implemented using role-based access control such as allowing only admin users to access certain pages.
+中文解释（句子版）：
+Authentication（身份验证）用来确认用户的真实身份，也就是确定「你是谁」，例如用户需通过输入正确的 Email 和密码登录系统。Authorization（授权）则是在身份验证成功后，用来决定该用户「可以做什么」，例如系统只允许 Admin 角色用户访问管理页面或执行删除操作，因此 Authentication 是登录验证，而 Authorization 是权限控制。
+
+Question 2
+Examine what cookie-based authentication is in ASP.NET Core.
+Answer (EN):
+Cookie-based authentication is a common authentication method where user identity information is stored in an encrypted and HTTP-only cookie after a successful login. This cookie is sent with every request to identify the user until the user logs out or the cookie expires.
+中文解释（句子版）：
+在 ASP.NET Core 中，Cookie-based authentication 是一种常见的身份验证方式。用户成功登录后，系统会生成一个加密且仅服务器可读取的 Cookie 来存储用户身份信息，例如 User ID、Email 或角色。浏览器在每次请求时自动附带该 Cookie，从而识别用户身份，直到用户登出或 Cookie 过期。
+
+Question 3
+Differentiate between principal, identity and claims in ASP.NET Core security using a real-life analogy.
+Answer (EN):
+A principal represents the user interacting with the system. An identity is a proof that the user has been authenticated. Claims are small pieces of information about the user such as email and role. A real-life analogy is a person (principal) carrying different identity cards (identity), and each card contains personal information (claims).
+中文解释（句子版）：
+在 ASP.NET Core 安全机制中，Principal 代表正在与系统互动的用户本身，Identity 是证明该用户已通过身份验证的凭证，Claims 是 Identity 中储存的用户信息，例如 Email 或角色。现实生活类比：一个人是 Principal，他持有身份证、学生证或驾照等不同 Identity，而这些证件上的信息就是 Claims。
+
+Question 4
+Investigate how bundling works as a web optimization technique.
+Answer (EN):
+Bundling works by combining multiple JavaScript or CSS files into a single file, which reduces the number of HTTP requests needed to load a web page and improves loading speed.
+中文解释（句子版）：
+Bundling 是一种网页性能优化技术，通过将多个 JavaScript 或 CSS 文件合并成一个文件，减少浏览器向服务器发出的 HTTP 请求次数，从而加快网页加载速度。
+
+Question 5
+Investigate how minification works as a web optimization technique.
+Answer (EN):
+Minification works by removing unnecessary characters such as white spaces, comments, and line breaks from JavaScript and CSS files, and by shortening variable names to reduce file size and improve loading performance.
+中文解释（句子版）：
+Minification 是通过删除 JavaScript 和 CSS 文件中不必要的空格、换行和注释，同时缩短变量名称，来减小文件大小，提高网页加载和执行效率。
