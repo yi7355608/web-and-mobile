@@ -1,0 +1,37 @@
+
+
+Question 1
+What are the advantages of using reusable layout in ASP.NET MVC web applications?
+
+Answer (EN):
+Provides consistent UI across pages, reduces duplicate code, and makes maintenance easier.
+
+答案（中）：
+可提供一致的页面布局，减少重复代码，并提升维护与更新效率。
+
+Question 2
+What are tag helpers?
+
+Answer (EN):
+Server-side features that extend HTML elements using asp- attributes and render standard HTML.
+
+答案（中）：
+Tag Helpers 是透过 asp- 属性扩展 HTML 元素的服务器端功能，最终会生成标准 HTML。
+
+Question 3
+Differentiate between tag helpers and HTML helpers.
+
+Answer (EN):
+Tag Helpers use HTML-like syntax and are easier for designers, while HTML Helpers are C# methods and less readable.
+
+答案（中）：
+Tag Helper 使用类似 HTML 的语法，较易阅读；HTML Helper 属于 C# 方法，较不直观。
+
+Question 4
+What are partial views?
+
+Answer (EN):
+Reusable UI components that render part of a web page and help avoid code duplication.
+
+答案（中）：
+Partial View 是可重用的界面组件，用于渲染网页的一部分并减少重复代码。
