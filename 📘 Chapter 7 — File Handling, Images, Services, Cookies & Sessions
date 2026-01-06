@@ -1,0 +1,43 @@
+
+
+Question 1
+Why is it not recommended to save an uploaded file using its original file name, and what file name should be used instead?
+Answer (EN):
+It is not recommended to use the original file name because it may overwrite existing files and can be exploited for path traversal attacks. Instead, a random unique file name should be used.
+中文解释（句子版）：
+不建议使用上传文件的原始文件名来储存档案，是因为相同文件名可能会导致原有文件被覆盖，同时攻击者也可能利用恶意的文件名进行路径穿越攻击，例如访问或覆盖系统中不该存取的文件。因此，较安全的做法是使用随机且唯一的文件名（例如 GUID）来保存上传的文件。
+
+Question 2
+Identify and discuss three image validation techniques with examples.
+Answer (EN):
+The three image validation techniques are content length, content type, and file extension. Content length ensures the image size is within limits, content type ensures the file is an image, and file extension checks that the file ends with valid image extensions such as .jpg or .png.
+中文解释（句子版）：
+影像验证通常包含三种方式，分别是 Content Length、Content Type 和 File Extension。Content Length 用来确保图片的大小未超过系统设定的限制，例如 1MB 以下；Content Type 用来确认上传的文件确实是图片格式，例如 image/jpeg 或 image/png；File Extension 则检查文件副档名是否符合合法的图片类型，如 .jpg 或 .png，从而减少上传恶意文件的风险。
+
+Question 3
+Identify and discuss three image processing techniques and justify why each is important.
+Answer (EN):
+The three image processing techniques are image cropping, image resizing, and image type conversion. Cropping ensures consistent shape, resizing reduces file size, and type conversion ensures consistent image format and easier management.
+中文解释（句子版）：
+影像处理常见的三种技术包括 Image Cropping、Image Resizing 和 Image Type Conversion。Image Cropping 可以裁剪多余部分，使所有图片比例一致；Image Resizing 用于缩小图片尺寸，从而减少文件大小和储存空间；Image Type Conversion 则可将不同格式的图片统一成同一格式（例如 JPEG），便于系统管理并提升整体效能。
+
+Question 4
+Identify and differentiate between the three service lifetimes in ASP.NET Core and specify their use cases.
+Answer (EN):
+The three service lifetimes are Singleton, Scoped, and Transient. Singleton creates one instance for the entire application, Scoped creates one instance per HTTP request, and Transient creates a new instance every time it is injected.
+中文解释（句子版）：
+在 ASP.NET Core 中，服务生命周期分为 Singleton、Scoped 和 Transient 三种。Singleton 会在整个应用中只建立一个实例并被所有用户共享；Scoped 会在每一次 HTTP 请求中建立一个实例；而 Transient 则是在每次注入服务时都会新建一个实例，每种生命周期适用于不同的使用情境。
+
+Question 5
+Which service lifetime should be used to share data globally across all users and pages? Justify your answer.
+Answer (EN):
+Singleton should be used because it creates a single shared instance that is accessible globally throughout the application.
+中文解释（句子版）：
+当系统需要在所有页面和用户之间共享同一份数据时，应使用 Singleton 服务生命周期，因为 Singleton 只会建立一个实例，并在整个应用运行期间持续存在，从而确保全局数据共享。
+
+Question 6
+Which service lifetime should be used to retain data within a single HTTP request while using a database context? Justify your answer.
+Answer (EN):
+Scoped should be used because it creates one instance per HTTP request and is compatible with the scoped lifetime of the database context.
+中文解释（句子版）：
+若服务需要在单一 HTTP 请求内保留数据，并且必须使用数据库上下文（DB Context），则应使用 Scoped 服务生命周期，因为 DB Context 本身也是 Scoped，使用相同生命周期可保证数据一致性并避免错误。
