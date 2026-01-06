@@ -1,0 +1,48 @@
+
+
+Question 1
+What is object-relational mapping (ORM)? Identify how relational model is mapped to object model.
+Answer (EN):
+Object-Relational Mapping (ORM) is the process of converting data stored in a relational database into object-oriented representations used in programming languages. Mapping: Table → Class, Column → Property, Record (Row) → Object, Relationship → Association / Navigation property.
+答案（中）：
+对象关系映射（ORM）是将关系型数据库中的数据转换为面向对象程序中的对象的过程。关系模型与对象模型的映射关系如下：数据表映射为类，列映射为属性，记录映射为对象，关系映射为关联或导航属性。
+
+Question 2
+Discuss the advantages of using ORM tools (e.g. Entity Framework Core).
+Answer (EN):
+(a) Automation: ORM tools can automatically generate entity classes or databases, reducing manual coding.
+(b) Object-oriented: Developers work with classes and objects instead of mixing OOP with SQL.
+(c) SQL-less: Built-in methods handle CRUD operations without writing SQL.
+(d) Database supports: Supports multiple databases like SQL Server, MySQL, SQLite.
+(e) Cleaner, consistent and secure code: SQL is separated from application code, improving readability, maintainability, and preventing SQL injection.
+答案（中）：
+ORM 工具具有以下优点：(a) 自动化：可自动生成实体类或数据库，减少手动编码。(b) 面向对象：开发者可以直接操作类和对象，而无需混合 OOP 与 SQL。(c) 无需 SQL：内建方法完成 CRUD 操作。(d) 数据库支持：支持多种数据库，便于切换。(e) 代码更整洁、一致且安全：SQL 与应用代码分离，提高可读性与维护性，并防止 SQL 注入。
+
+Question 3
+Discuss the key disadvantage of using ORM tools.
+Answer (EN):
+The main disadvantage of ORM tools is performance overhead. ORM introduces additional processing to convert objects to relational data and vice versa, and complex queries with multiple joins may not be optimized.
+答案（中）：
+ORM 的主要缺点是性能开销较高。对象与关系数据之间的转换会增加处理时间，并且多表复杂查询的优化效果不如手写 SQL。
+
+Question 4
+Differentiate between database-first and code-first database development.
+Answer (EN):
+Database-first: Database is created first, then entity classes are generated.
+Code-first: Entity classes are created first, then the database is generated automatically.
+答案（中）：
+Database-first：先建立数据库，再由数据库生成实体类。Code-first：先建立实体类，再由代码自动生成数据库。
+
+Question 5
+Describe how services are made available to controllers via constructor dependency injection.
+Answer (EN):
+Services such as DbContext are registered in Program.cs. Controllers declare required services as constructor parameters, and ASP.NET Core automatically injects them when creating the controller.
+答案（中）：
+服务（如 DbContext）在 Program.cs 中注册。控制器通过构造函数声明所需服务，ASP.NET Core 会自动注入并管理这些服务。
+
+Question 6
+Discuss the reason and purpose of using database migration.
+Answer (EN):
+Database migration keeps the database schema synchronized with data models during development. It allows incremental updates without manually writing SQL, essential in code-first development.
+答案（中）：
+数据库迁移用于在开发过程中保持数据库结构与数据模型一致，可逐步更新数据库而无需手写 SQL，是 Code-First 开发中不可或缺的机制。
